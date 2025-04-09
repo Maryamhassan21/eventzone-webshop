@@ -1,0 +1,265 @@
+/* General Body */
+html, body {
+    font-family: 'Roboto', sans-serif; 
+    background: #EAE4DC; 
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /*viewport flexible*/
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh
+}
+
+main {
+    flex: 1;
+}
+
+/* Header not used yet in login signup index */
+header {
+    background: #dceadf;
+    color: #65766c;
+    padding: 10px;
+    text-align: left;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+/* inc/navbar */
+.navbar {
+    background-color: #657364 !important;
+    padding: 0.5rem;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.navbar-nav .nav-link { /* nav = list in navbar link = each element*/
+    color: #ffffff;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #7e8779; 
+}
+
+
+/* inc/footer */
+
+footer {
+    background-color: #657364 !important;
+    color: #EAE4DC;
+    text-align: center;
+    padding: 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    width: 100%;
+    margin-top: auto;  /* footer adapts to page */
+}
+
+/* index related text */
+.description {
+    text-align: left;
+    padding: 60px;
+    max-width: 800px;
+    margin: 0 auto;
+    color: #333;
+}
+
+.description h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.description p {
+    font-size: 1.15rem;
+    line-height: 1.6;
+}
+
+/* Index Slider Positioning */
+#resort-slider {
+    margin: 0px auto;
+    max-width: 100%;
+}
+
+#resort-slider img {
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Index text style */
+
+#offers {
+    padding: 60px;
+    text-align: center;
+    background: transparent;
+    color: #333;
+
+}
+
+#offers h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+#offers ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#offers ul li {
+    margin: 15px 0;
+    font-size: 1.15rem;
+}
+
+
+/* login and signup */
+.separator {
+    width: 50%; /* Responsive width */
+    max-width: 100px; /* Restrict maximum width */
+    margin: 40px auto; /* Center on the page */
+    background-color: #f9f9f9; 
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+}
+
+
+
+
+.form-control {
+    /*readability*/
+    width: 100%; 
+    padding: 10px; 
+    font-size: 1rem; 
+}
+
+.btn-primary {
+    /*readability*/
+    width: 100%;
+    padding: 10px; 
+    font-weight: bold; 
+}
+
+
+/* Contact Form */
+.contact-container {
+    background: transparent; 
+    padding: 40px;
+}
+
+.contact-container .row {
+    gap: 50px; /* Add space between the two columns */
+}
+
+.contact-container .form-control {
+    padding: 10px;
+    font-size: 1rem;
+}
+
+.contact-container .btn-primary {
+    width: 100%;
+    padding: 10px;
+    font-weight: bold;
+}
+
+
+/*userAccount  */
+
+.card {
+    border-radius: 10px;
+    background-color: #ffffff;
+}
+
+.card h3 {
+    font-weight: bold;
+}
+
+.table th {
+    background-color: #343a40;
+    color: #ffffff;
+    text-align: left;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: #f9f9f9; /* Subtle contrast for rows */
+}
+
+.btn {
+    padding: 10px 15px;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+
+.btn-primary {
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #0b5ed7;
+    border-color: #0a58ca;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    border-color: #dc3545;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+.btn-danger:hover {
+    background-color: #c82333;
+    border-color: #bd2130;
+}
+
+
+/*helpful  */
+.text-center {
+    text-align: center;
+}
+/*
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+*/
+main, section, div {
+    background: transparent; /* no override */
+
+}
+.offer-section {
+    background-color: transparent;
+}
+
+
+/* Custom checkbox styling */
+.form-check-input:checked {
+    background-color: #3a3232 !important;
+    border-color: #3a3232 !important;
+}
+
+.form-check-input:focus {
+    border-color: #3a3232;
+    box-shadow: 0 0 0 0.25rem rgba(58, 50, 50, 0.25);
+}
+    
+
+@media (min-width: 768px) {
+    .navbar {
+        padding: 1.5rem; 
+    }
+}
+
+@media (min-width: 1200px) {
+    .navbar {
+        padding: 2rem; /* Further increase padding for desktops */
+    }
+}
+
